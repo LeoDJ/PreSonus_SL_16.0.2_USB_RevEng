@@ -1,0 +1,1247 @@
+Frame 28: 543 bytes on wire (4344 bits), 543 bytes captured (4344 bits) on interface \\.\USBPcap1, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap1)
+        Interface name: \\.\USBPcap1
+        Interface description: USBPcap1
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Apr 11, 2025 01:22:34.884005000 Mitteleuropäische Sommerzeit
+    UTC Arrival Time: Apr 10, 2025 23:22:34.884005000 UTC
+    Epoch Arrival Time: 1744327354.884005000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 28
+    Frame Length: 543 bytes (4344 bits)
+    Capture Length: 543 bytes (4344 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbdfu]
+USB URB
+    [Source: 1.12.0]
+    [Destination: host]
+    USBPcap pseudoheader length: 28
+    IRP ID: 0x0000000000000000
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_CONTROL_TRANSFER (0x0008)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 1
+    Device address: 12
+    Endpoint: 0x80, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0000 = Endpoint number: 0
+    URB transfer type: URB_CONTROL (0x02)
+    Packet Data Length: 515
+    [Request in: 27]
+    [Time from request: 0.000000000 seconds]
+    Control transfer stage: Complete (3)
+CONFIGURATION DESCRIPTOR
+    bLength: 9
+    bDescriptorType: 0x02 (CONFIGURATION)
+    wTotalLength: 515
+    bNumInterfaces: 7
+    bConfigurationValue: 1
+    iConfiguration: 0
+    Configuration bmAttributes: 0xc0  SELF-POWERED  NO REMOTE-WAKEUP
+        1... .... = Must be 1: Must be 1 for USB 1.1 and higher
+        .1.. .... = Self-Powered: This device is SELF-POWERED
+        ..0. .... = Remote Wakeup: This device does NOT support remote wakeup
+    bMaxPower: 250  (500mA)
+INTERFACE ASSOCIATION DESCRIPTOR
+    bLength: 8
+    bDescriptorType: 0x0b (INTERFACE ASSOCIATION)
+    bFirstInterface: 0
+    bInterfaceCount: 3
+    bFunctionClass: Audio (0x01)
+    bFunctionSubClass: 0x00
+    bFunctionProtocol: 0x20
+    iFunction: 0
+INTERFACE DESCRIPTOR (0.0): class Audio
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 0
+    bAlternateSetting: 0
+    bNumEndpoints: 0
+    bInterfaceClass: Audio (0x01)
+    bInterfaceSubClass: Audio Control (0x01)
+    bInterfaceProtocol: 0x20
+    iInterface: 3
+Class-specific Audio Control Interface Descriptor: Header Descriptor
+    bLength: 9
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Header Descriptor (0x01)
+    Version: 2,00
+    Category: I/O box (0x08)
+    Total length: 239
+    Controls: 0x00, Latency Control: Not present
+        .... ..00 = Latency Control: Not present (0x0)
+        0000 00.. = Reserved: 0x00
+Class-specific Audio Control Interface Descriptor: Clock source descriptor
+    bLength: 8
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Clock source descriptor (0x0a)
+    Clock Source Entity: 41
+    Attributes: 0x03, Type: Internal programmable clock, Synchronization: Free running
+        .... ..11 = Type: Internal programmable clock (0x3)
+        .... .0.. = Synchronization: Free running (0x0)
+        0000 0... = Reserved: 0x00
+    Controls: 0x07, Clock Frequency Control: Host programmable, Clock Validity Control: Present, read-only
+        .... ..11 = Clock Frequency Control: Host programmable (0x3)
+        .... 01.. = Clock Validity Control: Present, read-only (0x1)
+        0000 .... = Reserved: 0x0
+    Terminal: 0
+    String descriptor index: 14
+Class-specific Audio Control Interface Descriptor: Clock selector descriptor
+    bLength: 8
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Clock selector descriptor (0x0b)
+    Clock Selector Entity: 40
+    Number of Input Pins: 1
+    Connected Clock Entity: 41
+    Controls: 0x03, Clock Selector Control: Host programmable
+        .... ..11 = Clock Selector Control: Host programmable (0x3)
+        0000 00.. = Reserved: 0x00
+    String descriptor index: 13
+Class-specific Audio Control Interface Descriptor: Input terminal descriptor
+    bLength: 17
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Input terminal descriptor (0x02)
+    Terminal ID: 2
+    Terminal Type: USB Streaming (0x0101)
+    Assoc Terminal: 0
+    Connected Clock Entity: 40
+    Number Channels: 16
+    Channel Config: 0x00000000
+        .... .... .... .... .... .... .... ...0 = Front Left: False
+        .... .... .... .... .... .... .... ..0. = Front Right: False
+        .... .... .... .... .... .... .... .0.. = Front Center: False
+        .... .... .... .... .... .... .... 0... = Low Frequency Effects: False
+        .... .... .... .... .... .... ...0 .... = Back Left: False
+        .... .... .... .... .... .... ..0. .... = Back Right: False
+        .... .... .... .... .... .... .0.. .... = Front Left of Center: False
+        .... .... .... .... .... .... 0... .... = Front Right of Center: False
+        .... .... .... .... .... ...0 .... .... = Back Center: False
+        .... .... .... .... .... ..0. .... .... = Side Left: False
+        .... .... .... .... .... .0.. .... .... = Side Right: False
+        .... .... .... .... .... 0... .... .... = Top Center: False
+        .... .... .... .... ...0 .... .... .... = Top Front Left: False
+        .... .... .... .... ..0. .... .... .... = Top Front Center: False
+        .... .... .... .... .0.. .... .... .... = Top Front Right: False
+        .... .... .... .... 0... .... .... .... = Top Back Left: False
+        .... .... .... ...0 .... .... .... .... = Top Back Center: False
+        .... .... .... ..0. .... .... .... .... = Top Back Right: False
+        .... .... .... .0.. .... .... .... .... = Top Front Left of Center: False
+        .... .... .... 0... .... .... .... .... = Top Front Right of Center: False
+        .... .... ...0 .... .... .... .... .... = Left Low Frequency Effects: False
+        .... .... ..0. .... .... .... .... .... = Right Low Frequency Effects: False
+        .... .... .0.. .... .... .... .... .... = Top Side Left: False
+        .... .... 0... .... .... .... .... .... = Top Side Right: False
+        .... ...0 .... .... .... .... .... .... = Bottom Center: False
+        .... ..0. .... .... .... .... .... .... = Back Left of Center: False
+        .... .0.. .... .... .... .... .... .... = Back Right of Center: False
+        .000 0... .... .... .... .... .... .... = Reserved: False
+        0... .... .... .... .... .... .... .... = Raw Data: False
+    Channel Names: 18
+    Controls: 0x0000, Copy Protect Control: Not present, Connector Control: Not present, Overload Control: Not present, Cluster Control: Not present, Underflow Control: Not present, Overflow Control: Not present
+        .... .... .... ..00 = Copy Protect Control: Not present (0x0)
+        .... .... .... 00.. = Connector Control: Not present (0x0)
+        .... .... ..00 .... = Overload Control: Not present (0x0)
+        .... .... 00.. .... = Cluster Control: Not present (0x0)
+        .... ..00 .... .... = Underflow Control: Not present (0x0)
+        .... 00.. .... .... = Overflow Control: Not present (0x0)
+        0000 .... .... .... = Reserved: 0x0
+    String descriptor index: 6
+Class-specific Audio Control Interface Descriptor: Feature unit descriptor
+    bLength: 74
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Feature unit descriptor (0x06)
+    Unit ID: 10
+    Source ID: 2
+    Controls: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        Master channel 0  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boost
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 1  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 2  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 3  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 4  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 5  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 6  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 7  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 8  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 9  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 10  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 11  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 12  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 13  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 14  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 15  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 16  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+    Feature: 0
+Class-specific Audio Control Interface Descriptor: Output terminal descriptor
+    bLength: 12
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Output terminal descriptor (0x03)
+    Terminal ID: 20
+    Terminal Type: Speaker (0x0301)
+    Assoc Terminal: 0
+    Source ID: 10
+    Connected Clock Entity: 40
+    Controls: 0x0000, Copy Protect Control: Not present, Connector Control: Not present, Overload Control: Not present, Underflow Control: Not present, Overflow Control: Not present
+        .... .... .... ..00 = Copy Protect Control: Not present (0x0)
+        .... .... .... 00.. = Connector Control: Not present (0x0)
+        .... .... ..00 .... = Overload Control: Not present (0x0)
+        .... .... 00.. .... = Underflow Control: Not present (0x0)
+        .... ..00 .... .... = Overflow Control: Not present (0x0)
+        0000 00.. .... .... = Reserved: 0x00
+    String descriptor index: 0
+Class-specific Audio Control Interface Descriptor: Input terminal descriptor
+    bLength: 17
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Input terminal descriptor (0x02)
+    Terminal ID: 1
+    Terminal Type: Microphone (0x0201)
+    Assoc Terminal: 0
+    Connected Clock Entity: 40
+    Number Channels: 18
+    Channel Config: 0x00000000
+        .... .... .... .... .... .... .... ...0 = Front Left: False
+        .... .... .... .... .... .... .... ..0. = Front Right: False
+        .... .... .... .... .... .... .... .0.. = Front Center: False
+        .... .... .... .... .... .... .... 0... = Low Frequency Effects: False
+        .... .... .... .... .... .... ...0 .... = Back Left: False
+        .... .... .... .... .... .... ..0. .... = Back Right: False
+        .... .... .... .... .... .... .0.. .... = Front Left of Center: False
+        .... .... .... .... .... .... 0... .... = Front Right of Center: False
+        .... .... .... .... .... ...0 .... .... = Back Center: False
+        .... .... .... .... .... ..0. .... .... = Side Left: False
+        .... .... .... .... .... .0.. .... .... = Side Right: False
+        .... .... .... .... .... 0... .... .... = Top Center: False
+        .... .... .... .... ...0 .... .... .... = Top Front Left: False
+        .... .... .... .... ..0. .... .... .... = Top Front Center: False
+        .... .... .... .... .0.. .... .... .... = Top Front Right: False
+        .... .... .... .... 0... .... .... .... = Top Back Left: False
+        .... .... .... ...0 .... .... .... .... = Top Back Center: False
+        .... .... .... ..0. .... .... .... .... = Top Back Right: False
+        .... .... .... .0.. .... .... .... .... = Top Front Left of Center: False
+        .... .... .... 0... .... .... .... .... = Top Front Right of Center: False
+        .... .... ...0 .... .... .... .... .... = Left Low Frequency Effects: False
+        .... .... ..0. .... .... .... .... .... = Right Low Frequency Effects: False
+        .... .... .0.. .... .... .... .... .... = Top Side Left: False
+        .... .... 0... .... .... .... .... .... = Top Side Right: False
+        .... ...0 .... .... .... .... .... .... = Bottom Center: False
+        .... ..0. .... .... .... .... .... .... = Back Left of Center: False
+        .... .0.. .... .... .... .... .... .... = Back Right of Center: False
+        .000 0... .... .... .... .... .... .... = Reserved: False
+        0... .... .... .... .... .... .... .... = Raw Data: False
+    Channel Names: 34
+    Controls: 0x0000, Copy Protect Control: Not present, Connector Control: Not present, Overload Control: Not present, Cluster Control: Not present, Underflow Control: Not present, Overflow Control: Not present
+        .... .... .... ..00 = Copy Protect Control: Not present (0x0)
+        .... .... .... 00.. = Connector Control: Not present (0x0)
+        .... .... ..00 .... = Overload Control: Not present (0x0)
+        .... .... 00.. .... = Cluster Control: Not present (0x0)
+        .... ..00 .... .... = Underflow Control: Not present (0x0)
+        .... 00.. .... .... = Overflow Control: Not present (0x0)
+        0000 .... .... .... = Reserved: 0x0
+    String descriptor index: 0
+Class-specific Audio Control Interface Descriptor: Feature unit descriptor
+    bLength: 82
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Feature unit descriptor (0x06)
+    Unit ID: 11
+    Source ID: 1
+    Controls: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        Master channel 0  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boost
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 1  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 2  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 3  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 4  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 5  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 6  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 7  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 8  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 9  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boos
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 10  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 11  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 12  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 13  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 14  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 15  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 16  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 17  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+        Logical channel 18  [truncated]Control: 0x00000000, Mute: Not present, Volume: Not present, Bass: Not present, Mid: Not present, Treble: Not present, Graphic Equalizer: Not present, Automatic Gain: Not present, Delay: Not present, Bass Boo
+            .... .... .... .... .... .... .... ..00 = Mute: Not present (0x0)
+            .... .... .... .... .... .... .... 00.. = Volume: Not present (0x0)
+            .... .... .... .... .... .... ..00 .... = Bass: Not present (0x0)
+            .... .... .... .... .... .... 00.. .... = Mid: Not present (0x0)
+            .... .... .... .... .... ..00 .... .... = Treble: Not present (0x0)
+            .... .... .... .... .... 00.. .... .... = Graphic Equalizer: Not present (0x0)
+            .... .... .... .... ..00 .... .... .... = Automatic Gain: Not present (0x0)
+            .... .... .... .... 00.. .... .... .... = Delay: Not present (0x0)
+            .... .... .... ..00 .... .... .... .... = Bass Boost: Not present (0x0)
+            .... .... .... 00.. .... .... .... .... = Loudness: Not present (0x0)
+            .... .... ..00 .... .... .... .... .... = Input Gain: Not present (0x0)
+            .... .... 00.. .... .... .... .... .... = Input Gain Pad: Not present (0x0)
+            .... ..00 .... .... .... .... .... .... = Phase Inverter: Not present (0x0)
+            .... 00.. .... .... .... .... .... .... = Underflow: Not present (0x0)
+            ..00 .... .... .... .... .... .... .... = Overflow: Not present (0x0)
+            00.. .... .... .... .... .... .... .... = Reserved: 0x0
+    Feature: 0
+Class-specific Audio Control Interface Descriptor: Output terminal descriptor
+    bLength: 12
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Output terminal descriptor (0x03)
+    Terminal ID: 22
+    Terminal Type: USB Streaming (0x0101)
+    Assoc Terminal: 0
+    Source ID: 11
+    Connected Clock Entity: 40
+    Controls: 0x0000, Copy Protect Control: Not present, Connector Control: Not present, Overload Control: Not present, Underflow Control: Not present, Overflow Control: Not present
+        .... .... .... ..00 = Copy Protect Control: Not present (0x0)
+        .... .... .... 00.. = Connector Control: Not present (0x0)
+        .... .... ..00 .... = Overload Control: Not present (0x0)
+        .... .... 00.. .... = Underflow Control: Not present (0x0)
+        .... ..00 .... .... = Overflow Control: Not present (0x0)
+        0000 00.. .... .... = Reserved: 0x00
+    String descriptor index: 7
+INTERFACE DESCRIPTOR (1.0): class Audio
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 1
+    bAlternateSetting: 0
+    bNumEndpoints: 0
+    bInterfaceClass: Audio (0x01)
+    bInterfaceSubClass: Audio Streaming (0x02)
+    bInterfaceProtocol: 0x20
+    iInterface: 4
+INTERFACE DESCRIPTOR (1.1): class Audio
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 1
+    bAlternateSetting: 1
+    bNumEndpoints: 2
+    bInterfaceClass: Audio (0x01)
+    bInterfaceSubClass: Audio Streaming (0x02)
+    bInterfaceProtocol: 0x20
+    iInterface: 4
+Class-specific Audio Streaming Interface Descriptor: General AS Descriptor
+    bLength: 16
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: General AS Descriptor (0x01)
+    Connected Terminal ID: 2
+    Controls: 0x00, Active Alternate Setting Control: Not present, Valid Alternate Settings Control: Not present
+        .... ..00 = Active Alternate Setting Control: Not present (0x0)
+        .... 00.. = Valid Alternate Settings Control: Not present (0x0)
+        0000 .... = Reserved: 0x0
+    Format Type: 1
+    Formats: 0x00000001, PCM
+        .... .... .... .... .... .... .... ...1 = PCM: True
+        .... .... .... .... .... .... .... ..0. = PCM8: False
+        .... .... .... .... .... .... .... .0.. = IEEE Float: False
+        .... .... .... .... .... .... .... 0... = ALAW: False
+        .... .... .... .... .... .... ...0 .... = MULAW: False
+        .000 0000 0000 0000 0000 0000 000. .... = Reserved: 0x0000000
+        0... .... .... .... .... .... .... .... = Type I Raw Data: False
+    Number of channels: 16
+    Channel Config: 0x00000000
+        .... .... .... .... .... .... .... ...0 = Front Left: False
+        .... .... .... .... .... .... .... ..0. = Front Right: False
+        .... .... .... .... .... .... .... .0.. = Front Center: False
+        .... .... .... .... .... .... .... 0... = Low Frequency Effects: False
+        .... .... .... .... .... .... ...0 .... = Back Left: False
+        .... .... .... .... .... .... ..0. .... = Back Right: False
+        .... .... .... .... .... .... .0.. .... = Front Left of Center: False
+        .... .... .... .... .... .... 0... .... = Front Right of Center: False
+        .... .... .... .... .... ...0 .... .... = Back Center: False
+        .... .... .... .... .... ..0. .... .... = Side Left: False
+        .... .... .... .... .... .0.. .... .... = Side Right: False
+        .... .... .... .... .... 0... .... .... = Top Center: False
+        .... .... .... .... ...0 .... .... .... = Top Front Left: False
+        .... .... .... .... ..0. .... .... .... = Top Front Center: False
+        .... .... .... .... .0.. .... .... .... = Top Front Right: False
+        .... .... .... .... 0... .... .... .... = Top Back Left: False
+        .... .... .... ...0 .... .... .... .... = Top Back Center: False
+        .... .... .... ..0. .... .... .... .... = Top Back Right: False
+        .... .... .... .0.. .... .... .... .... = Top Front Left of Center: False
+        .... .... .... 0... .... .... .... .... = Top Front Right of Center: False
+        .... .... ...0 .... .... .... .... .... = Left Low Frequency Effects: False
+        .... .... ..0. .... .... .... .... .... = Right Low Frequency Effects: False
+        .... .... .0.. .... .... .... .... .... = Top Side Left: False
+        .... .... 0... .... .... .... .... .... = Top Side Right: False
+        .... ...0 .... .... .... .... .... .... = Bottom Center: False
+        .... ..0. .... .... .... .... .... .... = Back Left of Center: False
+        .... .0.. .... .... .... .... .... .... = Back Right of Center: False
+        .000 0... .... .... .... .... .... .... = Reserved: False
+        0... .... .... .... .... .... .... .... = Raw Data: False
+    String descriptor index: 18
+Class-specific Audio Streaming Interface Descriptor: Format type descriptor
+    bLength: 6
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Format type descriptor (0x02)
+    FormatType: 1
+    Subslot Size: 3
+    Bit Resolution: 24
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x01  OUT  Endpoint:1
+        0... .... = Direction: OUT Endpoint
+        .... 0001 = Endpoint Number: 0x1
+    bmAttributes: 0x05
+        .... ..01 = Transfertype: Isochronous-Transfer (0x1)
+        .... 01.. = Synchronisationtype: Asynchronous (0x1)
+        ..00 .... = Behaviourtype: Data-Endpoint (0x0)
+    wMaxPacketSize: 1024
+        ...0 0... .... .... = Transactions per microframe: 1 (0)
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 1
+Class-specific Audio Streaming Endpoint Descriptor
+    bLength: 8
+    bDescriptorType: 0x25 (audio class endpoint)
+    Subtype: General Descriptor (0x01)
+    Attributes: 0x00
+        0... .... = MaxPacketsOnly: False
+    Controls: 0x00, Pitch Control: Not present, Data Overrun Control: Not present, Valid Alternate Settings Control: Not present
+        .... ..00 = Pitch Control: Not present (0x0)
+        .... 00.. = Data Overrun Control: Not present (0x0)
+        ..00 .... = Valid Alternate Settings Control: Not present (0x0)
+        00.. .... = Reserved: 0x0
+    Lock Delay Units: Decoded PCM samples (2)
+    Lock Delay: 8
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x81  IN  Endpoint:1
+        1... .... = Direction: IN Endpoint
+        .... 0001 = Endpoint Number: 0x1
+    bmAttributes: 0x11
+        .... ..01 = Transfertype: Isochronous-Transfer (0x1)
+        .... 00.. = Synchronisationtype: No Sync (0x0)
+        ..01 .... = Behaviourtype: Explicit Feedback-Endpoint (0x1)
+    wMaxPacketSize: 4
+        ...0 0... .... .... = Transactions per microframe: 1 (0)
+        .... ..00 0000 0100 = Maximum Packet Size: 4
+    bInterval: 4
+INTERFACE DESCRIPTOR (2.0): class Audio
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 2
+    bAlternateSetting: 0
+    bNumEndpoints: 0
+    bInterfaceClass: Audio (0x01)
+    bInterfaceSubClass: Audio Streaming (0x02)
+    bInterfaceProtocol: 0x20
+    iInterface: 5
+INTERFACE DESCRIPTOR (2.1): class Audio
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 2
+    bAlternateSetting: 1
+    bNumEndpoints: 1
+    bInterfaceClass: Audio (0x01)
+    bInterfaceSubClass: Audio Streaming (0x02)
+    bInterfaceProtocol: 0x20
+    iInterface: 5
+Class-specific Audio Streaming Interface Descriptor: General AS Descriptor
+    bLength: 16
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: General AS Descriptor (0x01)
+    Connected Terminal ID: 22
+    Controls: 0x00, Active Alternate Setting Control: Not present, Valid Alternate Settings Control: Not present
+        .... ..00 = Active Alternate Setting Control: Not present (0x0)
+        .... 00.. = Valid Alternate Settings Control: Not present (0x0)
+        0000 .... = Reserved: 0x0
+    Format Type: 1
+    Formats: 0x00000001, PCM
+        .... .... .... .... .... .... .... ...1 = PCM: True
+        .... .... .... .... .... .... .... ..0. = PCM8: False
+        .... .... .... .... .... .... .... .0.. = IEEE Float: False
+        .... .... .... .... .... .... .... 0... = ALAW: False
+        .... .... .... .... .... .... ...0 .... = MULAW: False
+        .000 0000 0000 0000 0000 0000 000. .... = Reserved: 0x0000000
+        0... .... .... .... .... .... .... .... = Type I Raw Data: False
+    Number of channels: 18
+    Channel Config: 0x00000000
+        .... .... .... .... .... .... .... ...0 = Front Left: False
+        .... .... .... .... .... .... .... ..0. = Front Right: False
+        .... .... .... .... .... .... .... .0.. = Front Center: False
+        .... .... .... .... .... .... .... 0... = Low Frequency Effects: False
+        .... .... .... .... .... .... ...0 .... = Back Left: False
+        .... .... .... .... .... .... ..0. .... = Back Right: False
+        .... .... .... .... .... .... .0.. .... = Front Left of Center: False
+        .... .... .... .... .... .... 0... .... = Front Right of Center: False
+        .... .... .... .... .... ...0 .... .... = Back Center: False
+        .... .... .... .... .... ..0. .... .... = Side Left: False
+        .... .... .... .... .... .0.. .... .... = Side Right: False
+        .... .... .... .... .... 0... .... .... = Top Center: False
+        .... .... .... .... ...0 .... .... .... = Top Front Left: False
+        .... .... .... .... ..0. .... .... .... = Top Front Center: False
+        .... .... .... .... .0.. .... .... .... = Top Front Right: False
+        .... .... .... .... 0... .... .... .... = Top Back Left: False
+        .... .... .... ...0 .... .... .... .... = Top Back Center: False
+        .... .... .... ..0. .... .... .... .... = Top Back Right: False
+        .... .... .... .0.. .... .... .... .... = Top Front Left of Center: False
+        .... .... .... 0... .... .... .... .... = Top Front Right of Center: False
+        .... .... ...0 .... .... .... .... .... = Left Low Frequency Effects: False
+        .... .... ..0. .... .... .... .... .... = Right Low Frequency Effects: False
+        .... .... .0.. .... .... .... .... .... = Top Side Left: False
+        .... .... 0... .... .... .... .... .... = Top Side Right: False
+        .... ...0 .... .... .... .... .... .... = Bottom Center: False
+        .... ..0. .... .... .... .... .... .... = Back Left of Center: False
+        .... .0.. .... .... .... .... .... .... = Back Right of Center: False
+        .000 0... .... .... .... .... .... .... = Reserved: False
+        0... .... .... .... .... .... .... .... = Raw Data: False
+    String descriptor index: 34
+Class-specific Audio Streaming Interface Descriptor: Format type descriptor
+    bLength: 6
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Format type descriptor (0x02)
+    FormatType: 1
+    Subslot Size: 3
+    Bit Resolution: 24
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x82  IN  Endpoint:2
+        1... .... = Direction: IN Endpoint
+        .... 0010 = Endpoint Number: 0x2
+    bmAttributes: 0x05
+        .... ..01 = Transfertype: Isochronous-Transfer (0x1)
+        .... 01.. = Synchronisationtype: Asynchronous (0x1)
+        ..00 .... = Behaviourtype: Data-Endpoint (0x0)
+    wMaxPacketSize: 1024
+        ...0 0... .... .... = Transactions per microframe: 1 (0)
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 1
+Class-specific Audio Streaming Endpoint Descriptor
+    bLength: 8
+    bDescriptorType: 0x25 (audio class endpoint)
+    Subtype: General Descriptor (0x01)
+    Attributes: 0x00
+        0... .... = MaxPacketsOnly: False
+    Controls: 0x00, Pitch Control: Not present, Data Overrun Control: Not present, Valid Alternate Settings Control: Not present
+        .... ..00 = Pitch Control: Not present (0x0)
+        .... 00.. = Data Overrun Control: Not present (0x0)
+        ..00 .... = Valid Alternate Settings Control: Not present (0x0)
+        00.. .... = Reserved: 0x0
+    Lock Delay Units: Decoded PCM samples (2)
+    Lock Delay: 8
+INTERFACE DESCRIPTOR (3.0): class Audio
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 3
+    bAlternateSetting: 0
+    bNumEndpoints: 0
+    bInterfaceClass: Audio (0x01)
+    bInterfaceSubClass: Audio Control (0x01)
+    bInterfaceProtocol: 0x00
+    iInterface: 0
+Class-specific Audio Control Interface Descriptor: Header Descriptor
+    bLength: 9
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Header Descriptor (0x01)
+    Version: 1,00
+    Total length: 9
+    Total number of interfaces: 1
+    Interface number: 1
+INTERFACE DESCRIPTOR (4.0): class Audio
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 4
+    bAlternateSetting: 0
+    bNumEndpoints: 2
+    bInterfaceClass: Audio (0x01)
+    bInterfaceSubClass: MIDI Streaming (0x03)
+    bInterfaceProtocol: 0x00
+    iInterface: 0
+Class-specific MIDI Streaming Interface Descriptor: Header Descriptor
+    bLength: 7
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Header Descriptor (0x01)
+    Version: 1,00
+    Total length: 65
+Class-specific MIDI Streaming Interface Descriptor: MIDI IN Jack descriptor
+    bLength: 6
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: MIDI IN Jack descriptor (0x02)
+    Jack Type: Embedded (0x01)
+    Jack ID: 1
+    String descriptor index: 0
+Class-specific MIDI Streaming Interface Descriptor: MIDI IN Jack descriptor
+    bLength: 6
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: MIDI IN Jack descriptor (0x02)
+    Jack Type: External (0x02)
+    Jack ID: 2
+    String descriptor index: 17
+Class-specific MIDI Streaming Interface Descriptor: MIDI OUT Jack descriptor
+    bLength: 9
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: MIDI OUT Jack descriptor (0x03)
+    Jack Type: Embedded (0x01)
+    Jack ID: 3
+    Number of Input Pins: 1
+    Connected MIDI Entity: 2
+    Entity Output Pin: 1
+    String descriptor index: 0
+Class-specific MIDI Streaming Interface Descriptor: MIDI OUT Jack descriptor
+    bLength: 9
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: MIDI OUT Jack descriptor (0x03)
+    Jack Type: External (0x02)
+    Jack ID: 4
+    Number of Input Pins: 1
+    Connected MIDI Entity: 1
+    Entity Output Pin: 1
+    String descriptor index: 16
+ENDPOINT DESCRIPTOR
+    bLength: 9
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x02  OUT  Endpoint:2
+        0... .... = Direction: OUT Endpoint
+        .... 0010 = Endpoint Number: 0x2
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 512
+        .... ..10 0000 0000 = Maximum Packet Size: 512
+    bInterval: 0
+    bRefresh: 0
+    bSynchAddress: 0
+Class-specific MIDI Streaming Endpoint Descriptor
+    bLength: 5
+    bDescriptorType: 0x25 (audio class endpoint)
+    Subtype: General Descriptor (0x01)
+    Number of Embedded MIDI Jacks: 1
+    Associated Embedded Jack ID: 1
+ENDPOINT DESCRIPTOR
+    bLength: 9
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x83  IN  Endpoint:3
+        1... .... = Direction: IN Endpoint
+        .... 0011 = Endpoint Number: 0x3
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 512
+        .... ..10 0000 0000 = Maximum Packet Size: 512
+    bInterval: 0
+    bRefresh: 0
+    bSynchAddress: 0
+Class-specific MIDI Streaming Endpoint Descriptor
+    bLength: 5
+    bDescriptorType: 0x25 (audio class endpoint)
+    Subtype: General Descriptor (0x01)
+    Number of Embedded MIDI Jacks: 1
+    Associated Embedded Jack ID: 3
+INTERFACE DESCRIPTOR (5.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 5
+    bAlternateSetting: 0
+    bNumEndpoints: 2
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0x00
+    bInterfaceProtocol: 0x00
+    iInterface: 0
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x84  IN  Endpoint:4
+        1... .... = Direction: IN Endpoint
+        .... 0100 = Endpoint Number: 0x4
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 512
+        .... ..10 0000 0000 = Maximum Packet Size: 512
+    bInterval: 0
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x03  OUT  Endpoint:3
+        0... .... = Direction: OUT Endpoint
+        .... 0011 = Endpoint Number: 0x3
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 512
+        .... ..10 0000 0000 = Maximum Packet Size: 512
+    bInterval: 0
+INTERFACE DESCRIPTOR (6.0): class Application Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 6
+    bAlternateSetting: 0
+    bNumEndpoints: 0
+    bInterfaceClass: Application Specific (0xfe)
+    bInterfaceSubClass: Device Firmware Upgrade (0x01)
+    bInterfaceProtocol: Runtime protocol (0x01)
+    iInterface: 15
+DFU Descriptor: DFU FUNCTIONAL
+    bLength: 9
+    bDescriptorType: 0x21 (DFU FUNCTIONAL)
+    0000 .... = Reserved: 0x0
+    .... 0... = Will Detach: False
+    .... .1.. = Manifestation Tolerant: True
+    .... ..1. = Can Upload: True
+    .... ...1 = Can Download: True
+    wDetachTimeOut: 250
+    wTransferSize: 64
+    bcdDFUVersion: 0x0110
